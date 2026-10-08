@@ -1,0 +1,23 @@
+# Release binaries belong in GitHub Release assets, never Git history.
+*.exe
+*.msi
+*.msix
+*.zip
+*.sha256
+*.manifest.json
+
+# Never commit credentials or signing material.
+.env
+.env.*
+*.pfx
+*.p12
+*.pem
+*.key
+*.cer
+*.crt
+
+staging/
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

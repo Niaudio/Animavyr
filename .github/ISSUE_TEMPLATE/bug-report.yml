@@ -1,0 +1,46 @@
+name: Bug Report
+description: Report a reproducible Animavyr problem.
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Do not include license keys, private project files, credentials, or security vulnerability details.
+  - type: input
+    id: version
+    attributes:
+      label: Animavyr version
+      placeholder: "0.9.2"
+    validations:
+      required: true
+  - type: input
+    id: windows
+    attributes:
+      label: Windows version
+      placeholder: "Windows 11 24H2"
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Reproduction steps
+      description: Use a minimal example without confidential project content.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: observed
+    attributes:
+      label: Observed behavior
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional redacted context
+      description: Include only non-sensitive logs or screenshots.
